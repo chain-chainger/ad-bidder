@@ -39,7 +39,7 @@ contract AdSlot {
         feeBalance += fee;
 
         currentBidder = msg.sender;
-        currentBid = msg.value - fee;
+        currentBid = msg.value;
         currentAdText = adText;
 
         emit NewBid(msg.sender, currentBid, adText);
